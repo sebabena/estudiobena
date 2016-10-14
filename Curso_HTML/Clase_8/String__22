@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 8</title>;
+          <style>
+                    #lyrics {
+                    font-family: verdana;
+                  }
+           </style>
+  </head>
+          <body>
+
+
+            <p d=lyrics></p>
+
+              <script>
+                 var n = 1;
+                 var resultado = "";
+
+                        while ( n <= 100 ) {
+                          if (n % 15 ===0) {
+                            console.log("FIZZBUZZ")
+                          }else if (n % 3 === 0){
+                                console.log("FIZZ")
+                              } else if (n % 5 ===0){
+                                console.log("BUZZ")
+                              }else {
+                              //resultado = ( resultado + n +" ")
+                              console.log(n)
+                          }
+                          n++
+                        }
+
+                console.log (resultado)
+                //
+                //  document.querySelector('#lyrics').innerHTML = song
+                //
+            </script>
+          </body>
+   </html>

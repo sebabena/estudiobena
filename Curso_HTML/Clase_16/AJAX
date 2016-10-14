@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+  <html>
+     <head>
+        <meta charset="UTF-8">
+        <title> nnnn </title>;
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+          <style>
+
+          </style>
+
+
+     </head>
+
+            <body>
+              <div id="tiempo"></div>
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+                <script>
+                  $("#tiempo").append("<div><div id="boton" class="col-md-4"><button type="button" class="btn btn-primary btn-md">comprar</button></div>")
+
+                  //$.get('http://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid=95176c8edea30e33338e0eaddd53a916').success(to_be_run_on_server_response_weather)
+
+
+
+
+                </script>
+           </body>
+   </html>

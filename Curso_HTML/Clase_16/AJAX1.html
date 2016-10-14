@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+  <html>
+     <head>
+        <meta charset="UTF-8">
+        <title> nnnn </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+          <style>
+
+          </style>
+
+
+     </head>
+
+            <body>
+              <h1>Elegi el post</h1>
+              <div class="borde1"><input type="text" name="firstname" placeholder="coloca aqui un numero de post y presiona el boton de abajo" size="100" autofocus></div>
+              <div id="boton"><button type="button" class="btn btn-primary btn-md">Click aqui</button></div>
+              <div id="datos" class="col-md-12"><div id="asi"></div></div>
+
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+                <script>
+                $(".btn").click(function(){
+                      var arreglo = 'http://jsonplaceholder.typicode.com/posts/'
+                      $.get(arreglo + $("input").val()).success (function(data){
+                      console.log(data)
+                      $("#asi").append(data.title)
+                      })
+                })
+
+              </script>
+           </body>
+   </html>
+
+<!-- Temperatura actual -->
+<!-- La máxima y la mínima de hoy
+Descripción de las condiciones actuales
+Velocidad del viento
+A que hora sale y se esconde el sol.(Pista: new Date(weatherData.sys.sunrise * 1000) ) -->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+  <html>
+     <head>
+            <meta charset="UTF-8">
+            <title> Welcome </title>;
+
+
+                  <style>
+                      #texto {
+                        font-size: 300%;
+                      }
+
+                   </style>
+
+     </head>
+
+            <body>
+
+                <div id="texto"></div>
+
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+                <script>
+
+                 var orden = 1 // hola N.
+                 var conoce = 1 //meet 1,2,3,4-....
+                 var limite =7  //cantidad de invitados)
+                 var oracion= ""
+
+
+                    while (orden <= limite) {
+                      oracion+="<p> Welcome " + orden
+                          var conoce=1
+                          while (conoce < orden){
+                                  if (conoce === 1 ){
+                                    oracion +=" , meet "+ conoce
+                                  } else if (conoce<orden-1){
+                                            oracion +=", " + conoce
+                                           } else {
+                                          oracion += " and " + conoce
+                                        }
+                                  conoce++
+
+                           }
+
+                      oracion += "</p>"
+                      orden++
+                      }
+                      $("#texto").append(oracion)
+
+                      </script>
+           </body>
+   </html>
+
+ <!--
+   while(nuevo<=limite){
+         string+="<p>Welcome "+nuevo
+         var lista=1
+         while(lista<nuevo){
+          if(lista===1){
+             string+=", meet "+lista
+           }else if(lista<nuevo-1){
+             string+=", "+lista
+             lista++
+           }else{
+             string+=" and "+lista
+           }
+         }
+         string+="</p>"
+         nuevo++
+
+
+
+   if (cantidad = 1) {
+   devolucion.textContent = "Welcome number 1"
+   }else if ( cantidad = 2) {
+      devolucion.textContent = "Welcome number 2, meet number 1"
+    } else if ( cantidad = 3) {
+          devolucion.textContent = "Welcome number 2, meet number 1"
+     } -->

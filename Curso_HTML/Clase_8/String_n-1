@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 8</title>;
+          <style>
+                    #lyrics {
+                    font-family: verdana;
+                  }
+           </style>
+  </head>
+          <body>
+
+
+            <p d=lyrics></p>
+
+              <script>
+                 var n = 15;
+                 var inicio = 1;
+                 var resultado = "";
+
+
+                 while ( inicio <= n ) {
+
+                   if (inicio === n){
+                     resultado=(resultado + inicio)
+
+                   } else {
+                  resultado=(resultado + inicio +", ")
+                  }
+
+                  inicio++
+                  }
+
+                console.log (resultado)
+
+                 document.querySelector('#lyrics').innerHTML = song
+
+            </script>
+          </body>
+   </html>

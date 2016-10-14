@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome N</title>
+  </head>
+  <body>
+    <div id="output">
+    </div>
+    <script>
+    var nuevo=1, limite=5, string=""
+//PRIMERA VERSION//
+    /*while(nuevo<=limite){
+      string+="<p>Welcome "+nuevo
+      if(nuevo>1){
+        var lista=1
+        string+=", meet "+(lista++)
+        if(nuevo>2){
+          while(lista<nuevo-1){
+            string+=", "+lista
+            lista++
+          }
+          string+=" and "+lista
+        }
+      }
+      string+="</p>"
+      nuevo++
+    }*/
+    //SEGUNDA VERSION//
+    /*while(nuevo<=limite){
+      string+="<p>Welcome "+nuevo
+      var lista=1
+      while(lista<nuevo){
+       if(lista===1){
+          string+=", meet "+lista
+        }else if(lista<nuevo-1){
+          string+=", "+lista
+        }else{
+          string+=" and "+lista
+        }
+      }
+      string+="</p>"
+      nuevo++
+    }*/
+    //TERCERA VERSION//
+   //
+  //  <p>Welcome 1</p>
+  //  <p>Welcome 2, meet 1</p>
+  //  <p>Welcome 3, meet 1 and 2</p>
+  //  <p>Welcome 4, meet 1, 2 and 3</p>
+  //  <p>Welcome 5, meet 1, 2, 3 and 4</p>
+
+                 arriba=""
+                 limite=5
+
+                  while (arriba<limite) {
+                    string+= "<p> Welcome " + arriba
+                       sube=1
+                          if (sube<arriba) {
+                            string+="meet, " + sube
+                            sube++
+                              if (sube<(limite-1)){
+                                string+=" , "+ sube
+                              } else {
+                                string+=" and " + sube
+                              }
+                              arriba++
+                              string+=</p>
+
+
+                    } else {
+                        string+=</p>
+
+                </script>
+</body
+
+</html>

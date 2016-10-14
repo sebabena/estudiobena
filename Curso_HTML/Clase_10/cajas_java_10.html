@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		img{
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class='row'>
+	</div>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script>
+
+var parrafo = 'Hola'
+
+var doge1 = 'https://media.npr.org/assets/img/2014/05/01/doge-car-0e838bddee2d8257d5394fd530956d549810e393.jpg'
+var doge2 = 'https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg'
+
+var caja = $('<div class="caja col-md-4"></div>')
+
+
+caja.append(img).append(parrafo)
+
+var i = 0, n = 11
+
+while( i < n ){
+
+	var nuevacaja = caja.clone()
+	var img = $('<img>')
+	if( i % 2 ){
+		img.attr('src', doge1)
+	}else{
+		img.attr('src', doge2)
+	}
+	nuevacaja.append(img)
+	$('.row').append( nuevacaja )
+	i++
+
+}
+
+</script>
+</body>
+</html>

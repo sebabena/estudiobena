@@ -1,0 +1,59 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+body {
+      background-image: url("http://www.quitatelozombie.com/img/FondosDePantalla/800x600/FondosDePantalla800x600-4.jpg");
+  }
+#todo {
+  font-family: verdana;
+  width:1200px;
+  margin: 0 auto;
+  background-color: red;
+  padding:20px;
+}
+#contenido {
+  color: black;
+  background-color: orange;
+  align-content: center;
+  padding:20px;1
+  font-size: 30px;
+  font-family: verdana;
+  margin: 20px;
+}
+#header{
+  font-family: verdana;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: blue;
+  padding: 20px;
+  margin: 20px;
+}
+#nav {
+  background-color: white;
+  font-family: verdana;
+  text-align: center;
+  font-size: 20px;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding: 30px;
+  margin: 20px;
+ }
+#footer{
+  color:white;
+  background-color: black;
+  text-align: center;
+  margin: 20px;
+  padding:5px;
+}
+.name {
+  font-family: verdana;
+  color:#161913;
+  font-weight: bolder;
+  text-align: center;
+}
+img{
+  border-radius: 100%;
+}

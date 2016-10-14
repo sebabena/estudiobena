@@ -1,0 +1,58 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+body {
+  backgbackground-image: url("http://www.quitatelozombie.com/img/FondosDePantalla/800x600/FondosDePantalla800x600-4.jpg");
+  background-image: url("http://www.quitatelozombie.com/img/FondosDePantalla/800x600/FondosDePantalla800x600-4.jpg");
+}
+img{
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+#contenido {
+  background-color: gray;
+
+}
+#header{
+  font-family: verdana;
+  background-image: image (D:\Estudio_Bena\0002.jpg) ;
+  padding: 5px;
+}
+#nav {
+  background-color: black;
+  color: white;
+  font-family: verdana;
+ }
+#footer{
+  background-color: darkgray;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.niceToKnow {
+  color: #FFF89C;
+  font-style: italic;
+  font-stretch: condensed;
+}
+.name {
+  color:#161913;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+img{
+  border-radius: 100%;
+}
+#todo {
+  width:860px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: verdana;
+  color: white
+  padding: 10px;
+  margin: 0px;
+}

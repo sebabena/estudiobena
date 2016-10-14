@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+  <html>
+     <head>
+        <meta charset="UTF-8">
+        <title> nnnn </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+          <style>
+
+          </style>
+
+
+     </head>
+
+            <body>
+
+
+
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+                <script>
+
+                // var answer_logger = function( fun ){
+                //   $("body").append("<div>" + fun() +"</div>")
+                // }
+                // var funcion = function(){
+                //     return "Yo deberia aparecer en un div#answer!"
+                // };
+                // answer_logger( funcion )
+
+                var answer_collector = function (arr) {
+                  var result = []
+                  for (var i=0 ; i < arr.length; i++){
+                    result.push( arr[i]() )
+                  }
+                  return result;
+                }
+
+               answer_collector [console.log("hola"),console.log("Bienvenido"),console.log("chauu")]
+
+
+
+                </script>
+           </body>
+   </html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <style>
+      h1 {
+        font-family: verdana;
+      }
+      p {
+        color: green;
+      }
+      i {
+        font-size: 300%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color:orange;">This is a heading</h1>
+    <p>This <i style="color:orange;">is</i> a paragraph.</p>
+    <p>This <i>is</i> a paragraph.</p>
+    <p style="font-size:300%;text-align:center;font-family:'Times New Roman';">This is by far the most important part of the page!</p>
+  </body>
+  </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+     <head>
+            <meta charset="UTF-8">
+            <title> BAR </title>;
+              <style>
+                  #greeting {
+                    font-family: verdana;
+                    font-size: 300%;
+                    background-color: red;
+                    }
+              </style>
+
+     </head>
+
+            <body>
+                <div>
+                  <p id="greeting"></p>
+                </div>
+
+<!-- //
+**preguntar edad, sexo, si es o no miembro
+**si tiene menos de 21 anios o no es miembro del club despedirlo amablemente como sr o sra
+** si es mayor y es miembro, dele la bienveida como sr o sra.
+**preguntele si tiene sed
+**preguntele que quiere tomar
+**si la respuesta es Coors Light, echalos del bar
+**si a respuesta es distinta de Coors Light digale que la bebida esta en camino.
+-->
+                <script>
+              //  var name , age , gender , is_member , thirsty , drink_of_choice
+
+                      name = prompt ("cual es su nombre?")
+                      gender = prompt ("es ud un hombre o una mujer? Responda con h o m")
+                      age = prompt ("cual es su edad?")
+                      is_member = prompt ("es ud socio del club? Responda con s o n")
+                      sr_o_sra = (gender === "h" ) ? " sr. " : " sra. "
+                      respuesta = document.querySelector("p#greeting")
+
+
+                          if (age < 21 || is_member === "n"){
+                            respuesta.textContent = "Disculpe" + sr_o_sra + name + ", ud no puede permanecer en el club"
+
+                          } else {
+                                  respuesta.textContent="Bienvenido ," + sr_o_sra + name + "."
+
+                                      thirsty = prompt ("tiene ud sed? Responda con s o deje en blanco")
+
+                                      if (thirsty) {
+                                                    drink_of_chioce = prompt ("que desea tomar?")
+                                                        if (drink_of_chioce === "Coors Light") {
+                                                                                          alert (sr_o_sra + name + ", ud ya no es bienvenido al club, RETIRESE!")
+                                                                                          } else {
+                                                                                                    respuesta.textContent += "su bebida esta en camino!"
+                                                                                                  }
+                                                   } else {
+                                                          alert (sr_o_sra +" "+ name + ", no se para que viene si no tiene sed!")
+                                                          }
+                                  }
+                </script>
+           </body>
+   </html>

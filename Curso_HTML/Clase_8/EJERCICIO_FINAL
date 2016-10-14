@@ -1,0 +1,8 @@
+Ejercicio: Calculadora de tasa de interés
+
+Preguntale al usuario tres cosas: Un balance inicial, un balance objetivo, y una tasa de interés (escrita como un número real, 0.05 para decir 5%, por ejemplo)
+Usá un while loop para calcular el número de períodos necesarios para que el balance incial supere al balance objetivo.
+Pista: En cada iteracion sumá el interes al capital inicial, hacelo hasta que supere el capital objetivo y la cantidad de iteraciones que hizo es la cantidad de meses.
+
+Usá textContent en un div #output para explicar la respuesta al usuario: "Para hacer crecer un capital inicial de $1000 a $2500 a una tasa de 6.5% vas a requerir ..."
+Usá Boostrap u algún otro Framework de tu preferencia para darle una buena presentación a tu página.

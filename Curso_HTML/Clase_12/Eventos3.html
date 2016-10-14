@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 11</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+      img {
+        height: 300px;
+      }
+    </style>
+
+  </head>
+          <body>
+            <div>
+            <button type="button" class="btn btn-default" id="money">Show me the money</button>
+            <button type="button" class="btn btn-default" id="opera">Show me OPERA</button>
+            <button type="button" class="btn btn-default" id="oprah">Show me OPRAH</button>
+            </div>
+
+            <img id="imgmoney" src="http://bucket.glanacion.com/anexos/fotos/36/1411236.jpg">
+            <img id="imgopera" src="http://www.prague.eu/file/edee/object/215/4.jpg">
+            <img id="imgoprah" src="http://static.oprah.com/images/o2/201404/oprah-tour-bio-1-949x534.jpg">
+
+
+
+            <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+            <script>
+            // $("#imgmoney, #imgoprah, #imgopera").hide()
+
+            $("button").click(function(){
+              var seleccion = "#img"+ $(this).attr("id")
+              $(seleccion).toggle();
+              $("img:not("+selecion+")").hide()
+            })
+
+
+
+            // $("#imgmoney, #imgoprah, #imgopera").css("display","none")
+            //
+            // $('#money').on('click', function(){
+            //   $("#imgmoney").toggle()
+            //   $("#imgopera,#imgoprah").hide()
+            // })
+            // $('#opera').on('click', function(){
+            //   $("#imgopera").toggle()
+            //   $("#imgoprah,#imgmoney").hide()
+            // })
+            // $('#oprah').on('click', function(){
+            //   $("#imgoprah").toggle()
+            //   $("#imgopera,#imgmoney").hide()
+            // })
+
+            </script>
+          </body>
+   </html>

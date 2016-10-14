@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PESTANA</title>
+        <meta charset=utf8>
+    </head>
+    <body>
+      <h1 style="background-color:green"><a href="https://drive.google.com/uc?export=download&id=0BwjjS_J8ILl-NEUxMGZBeUJzaUk&usp=sharing">Estudio Bena</h1>
+        <h2 Style="font-size:300%;background-color=green">Quienes somos</h2>
+        <p style="color:red;background-color:green">Ubicado en <a href="https://www.google.com.ar/maps/place/Saavedra,+CABA/@-34.554348,-58.5066694,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcb6ecec1f5741:0x42502844d305770b!8m2!3d-34.554242!4d-58.4915489"><em>Saavedra</em></a>, El estudio está compuesto por un equipo multidisciplinario de diseñadores liderados por Sebastián Benavidez, diseñador Industrial graduado en la Universidad de Buenos Aires.
+
+​Actualmente el Estudio BENA puede brindar un variado tipo de servicios vinculados con el diseño de productos, creación y rediseño de marcas, etc.</p>
+<h2 style="font-family:verdana;color:orange">Servicios </h2>
+<ul>
+<li>Diseño de <a href="http://estudiobena.wix.com/bena#!clientes/c1k7x"><em>Imagen Corporativa</em></a></li>
+<li>Diseño <a href="http://estudiobena.wix.com/bena"><i>web</i></a> de Sybase.</li>
+<li>Disenio de <a href="http://estudiobena.wix.com/bena#!portfolio/component_41229"><em>producto industrial.</em></a></li>
+<li style="font-size:400%">Desarrollo de procesos productivos para la fabricacion de prodctos.</li>
+</ul>
+<h2 id="por-qu-quiere-programar-">Nuestros clientes</h2>
+
+<p style="font-family:verdana;color:orange">Algunos de nuestros <a href="http://estudiobena.wix.com/bena#!clientes/c1k7x"><em>clientes</em></a> son:</p>
+<ul style="font-family:verdana;color:orange" >
+  <li> <a href="http://www.rondi.com.ar/"><i>Rondi</i></a> - Fábrica de juguetes. </li>
+  <li> <a href="http://zottgroup.com/index.php/es/home"><b>ZOTT Group</b></a> - Fabricación de merchandising. </li>
+  <li> <a href="http://k8malabares.com"><em>K8 Malabares</em></a> - Fábrica de roductos para malabares. </li>
+  <li> <a href="http://volquetesdiego.com.ar"><em>Volquetes Diego</em></a> - Servicios de alquiler de volquetes. </li>
+  <li> <a href="http://geolabweb.wixsite.com/geolab"><em>Geo Lab</em></a> - Laboratorio de suelos. </li>
+</ul>
+<h2 id="sus-objetivos-con-el-curso">Algunos de nuestros trabajos</h2>
+<img src="C:\Users\Sebastian\Desktop\Programacion\Curso_HTML\Trabajos.jpg" alt="Foto local">
+</html>

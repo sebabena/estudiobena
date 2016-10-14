@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	  	img{
+	    	height: 20px;
+	  	}
+		.rela{
+			margin-left: 5%;
+			margin-top: 5%;
+		}
+  </style>
+</head>
+<body>
+	<div><img id="auto1" src="http://www.clipartlord.com/wp-content/uploads/2013/03/car7.png"></div>
+	<div><img id="auto2" src="http://clipartion.com/wp-content/uploads/2016/02/best-car-clip-art-free.png"></div>
+	<div class="rela">
+		<button id="start" class=" btn btn-default" type="button">Start</button>
+		<button id="stop" class="btn btn-default" type="button">Stop</button>
+		<button id="enzo" class="btn btn-default" type="button">Enzo's car + speed</button>
+		<button id="toni" class="btn btn-default" type="button">Toni's car + speed</button>
+		<button id="restart" class="btn btn-default" type="button">Reset</button>
+	</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+	var enzo = {
+		name: 'Enzo',
+		location: 'Baradero',
+		hobbies: ['andar en bici','programar','ver series'],
+		mascota: {
+			nombre: 'Tom',
+			tipo: 'dog'
+		},
+		party: function(){
+			$('body').append('<h2>Feliz Cumplee!!</h2>')
+		}
+	}
+	enzo.work = function(){
+		console.log("Welcome to McDonald's, I'm " + this.name + ". May I take your order?")
+		console.log("Enjoy this beautiful day in " + this.location)
+		console.log("Would you like to hear a story about my " + this.mascota.tipo + " " + this.mascota.nombre)
+	}
+	enzo.workout = function(){
+		console.log("Es hora de " + this.hobbies[0])
+		console.log("Y mas tarde " + this.hobbies[2] + " con alguien")
+	}
+	enzo.float_through_life_on_autopilot = function(){
+		this.party()
+		this.work()
+		this.workout()
+	}
+	var stop
+	var move_fn = function(){
+		var prev = this.position
+		this.position = this.position + this.speed
+		console.log(this.type + " is moving from " + prev + " to " + this.position)
+		if(this.marginl/100 < 90 && this.derecha){
+			$('#auto'+this.id).css('margin-left', (this.speed+this.marginl)/100+'%')
+			this.marginl += this.speed
+		}
+			if(this.marginl/100 >= 90){
+				// this.derecha = false
+				$('body').append('<h2>'+this.type+' Wins!!</h2>')
+				stop = true
+			}
+		// } else if(this.margint/10 < 20 && this.abajo){
+		// 	$('#auto'+this.id).css('margin-top', (this.speed+this.margint)/10+'%')
+		// 	this.margint += this.speed
+		// 	if(this.margint/10 >= 20){
+		// 		this.abajo = false
+		// 	}
+		// } else if(this.marginl>0 && !this.derecha){
+		// 	$('#auto'+this.id).css('margin-left', (this.marginl-this.speed)/10+'%')
+		// 	this.marginl -= this.speed
+		// } else{
+		// 	$('#auto'+this.id).css('margin-top', (this.margint-this.speed)/10+'%')
+		// 	this.margint -= this.speed
+		// 	if(this.margint===0){
+		// 		stop = true
+		// 	}
+		// }
+	}
+	var volver = function(){
+		this.speed = 6
+		this.position = 1
+		this.marginl = 0
+		$('#auto'+this.id).css('margin-left', '0%')
+	}
+
+	var car1 = {
+		type: "Enzo's car",
+		id: 1,
+		speed: 6,
+		position: 1,
+		move: move_fn,
+		marginl: 0,
+		margint: 0,
+		derecha: true,
+		abajo: true,
+		reset: volver
+	}
+	var car2 = {
+		type: "Toni's car",
+		id: 2,
+		speed: 6,
+		position: 1,
+		move: move_fn,
+		marginl: 0,
+		margint: 0,
+		derecha: true,
+		abajo: true,
+		reset: volver
+	}
+	var ciclo
+	$('#start').click(function(){
+		stop = false
+		ciclo = setInterval(function(){
+			if(stop ==false){
+		    	car1.move()
+		    	car2.move()
+			}
+  		}, 25)
+	})
+
+	$('#stop').click(function(){
+		stop = true
+		clearInterval(ciclo)
+	})
+
+	$('#enzo').click(function(){
+		car1.speed += 3
+	})
+	$('#toni').click(function(){
+		car2.speed += 3
+	})
+	$('#restart').click(function(){
+		car1.reset()
+		car2.reset()
+	})
+</script>
+</body>
+</html>

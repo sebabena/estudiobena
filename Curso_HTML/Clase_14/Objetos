@@ -1,0 +1,17 @@
+mi_auto = {}
+mi_auto ["marca"]= "Renault"
+mi_auto["año"]=2016
+mi_auto["nuevo"]= false
+
+mi_auto ={
+marca:"renault",
+año:2011,
+nuevo:false,
+}
+
+
+var property_key = "modelo"
+mi_auto={
+  property_key: "Focus",
+   
+}

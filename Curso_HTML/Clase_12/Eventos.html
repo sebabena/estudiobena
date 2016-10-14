@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 11</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+          <body>
+
+            <button type="button" class="btn btn-default" id="boton">Default</button>
+            <p id="output"></p>
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+            <script>
+
+
+            var beeper = function() {
+              var randomColor = '#' + Math.random().toString(16).slice(2, 8)
+              $("#output").append("<p>beep</p>")
+              $("body").css("background-color",randomColor)
+
+            }
+            document.querySelector('#boton').addEventListener('click', beeper)
+
+
+            </script>
+          </body>
+   </html>

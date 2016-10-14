@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+  <html>
+     <head>
+        <meta charset="UTF-8">
+        <title> nnnn </title>;
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+          <style>
+
+          </style>
+
+
+     </head>
+
+            <body>
+
+
+
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+                <script>
+                var fun = function(dato){
+                  console.log(dato)
+                }
+                var answer_query = function( fun ){
+                  $("body").append("<div>" + fun ("Hola")+"</div>")
+                }
+                
+                </script>
+           </body>
+   </html>

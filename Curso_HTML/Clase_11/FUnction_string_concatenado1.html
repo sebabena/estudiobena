@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 11</title>;
+
+  </head>
+          <body>
+
+            <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+            <script>
+
+              // // var n = 1;
+              // <p><span>1</span><span>2</span>
+
+
+                var fizz = function(text1,text2,text3){
+                  var n = 1
+                  while ( n < 100 ){
+                    var resultado ="<p>"
+                    if (n % 15 ===0){
+                      resultado+=  text1
+                    }else if (n % 3 === 0){
+                      resultado+= text2
+                    }else if (n % 5 ===0){
+                      resultado+= text3
+                    } else{
+                      resultado+= n
+                    }
+                    n++
+                    if (n=100){
+                      resultado += n + "</p>"
+                    }
+                    $("body").append(resultado)
+                    }
+                  return resultado
+                }
+
+            </script>
+          </body>
+   </html>

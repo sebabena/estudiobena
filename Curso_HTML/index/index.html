@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+          <meta charset="UTF-8">
+          <link href="styles.css" rel="stylesheet">
+          <title>Aventura Zombie</title>
+          <meta name="description" content="Mi primer post"></meta>
+  </head>
+  <body>
+            <div id='todo'>
+            <div id='header'>
+                  <h1 id="atencion">PRESTA MUCHA ATENCION</h1>
+                  <h3>Lo que elijas podra salvar tu vida o terminarla</h3>
+            </div>
+            <div id='contenido'>
+                  <p class='name'>UNA EPIDEMIA MORTAL SE HA DESATADO.</p>
+            </div>
+            <div id='nav'>
+              <nav>
+                <a href='https://www.youtube.com/watch?v=42U2G_KSBXY' target="_blank">Mira a lo que te enfrentas</a>
+            </div>
+            <div id='contenido'>
+              <p><span class='name'>NO HAY VUELTA ATRAS UNA VEZ QUE TE CONTAGIAS,</span> la enfermedad es irreversible, los sintomas son mortales dentro de los 30 min del contagio.
+            </div>
+            <div id='footer'>
+              <p>CONTINUA PRESONANDO <a href='index1.html'>AQUI</a></p>
+            </div>
+          </div>
+
+            <script>
+                var a = prompt("danos tu nombre")
+                var b = document.querySelector('#atencion').textContent
+                document.querySelector('#atencion').textContent= b +" "+ a
+            </script>
+      </body>
+</html>

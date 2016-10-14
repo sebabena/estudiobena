@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 11</title>;
+
+  </head>
+          <body>
+            <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+            <script>
+              $("body").append("<p></p>")
+                  var fizz = function(text1,text2,text3){
+                  var n = 1
+                  while ( n < 100 ){
+                    var resultado ="<span>"
+                    if (n % 15 ===0){
+                      resultado+= text1 + ",</span>"
+                    }else if (n % 3 === 0){
+                      resultado+= text2 + ",</span>"
+                    }else if (n % 5 ===0){
+                      resultado+= text3 + ",</span>"
+                    } else{
+                      resultado+= n + ",</span>"
+                    }
+                    n++
+                    $("p").append(resultado)
+                  }
+                  return fizz
+                }
+            </script>
+          </body>
+   </html>

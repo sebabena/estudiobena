@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+
+  <html>
+     <head>
+            <meta charset="UTF-8">
+            <title> nnnn </title>;
+
+
+                    <style>
+
+
+                   </style>
+
+
+     </head>
+
+            <body>
+
+
+
+
+
+
+
+                <script>
+                var col_fondo=""
+                var color=""
+                var borde=""
+
+                col_fondo = $("body").css("background-color","prompt ("de que color le gustaria el fondo de la pagina?"))
+
+
+
+                </script>
+           </body>
+   </html>

@@ -1,0 +1,41 @@
+<!-- var contador = 0
+while (contador < 51) {
+console.log (contador)
+contador = contador +2
+}
+ -->
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="UTF-8">
+     <title>Clase 8</title>;
+           <style>
+                     #lyrics {
+                     font-family: verdana;
+                   }
+            </style>
+   </head>
+           <body>
+
+
+             <p d=lyrics></p>
+
+               <script>
+                  var n = 100, song = '<ul class=lyrics>'
+
+                  while ( n >= 0 ) {
+                  if ( n !== 0 ) {
+                  song = song + '<li>' + n + " botella" + (n === 1 ? '' : 's')
+                  + " de cerveza en la pared! chug, chug, chug</li>"
+                  } else {
+                  song+= "<li>ninguna botella de cerveza! buu...</li>"
+                  }
+                  n--
+                  }
+                  song += "</ul>"
+
+                  document.querySelector('#lyrics').innerHTML = song
+
+             </script>
+           </body>
+    </html>

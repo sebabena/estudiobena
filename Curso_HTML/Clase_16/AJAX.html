@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+  <html>
+     <head>
+        <meta charset="UTF-8">
+        <title> nnnn </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+          <style>
+
+          </style>
+
+
+     </head>
+
+            <body>
+              <h1>Weather channel</h1>
+              <div class="borde1"><input type="text" name="firstname" placeholder="coloca aqui la ciudad" size="100" autofocus></div>
+              <div id="boton"><button type="button" class="btn btn-primary btn-md">Click aqui</button></div>
+              <div id="datos" class="col-md-12"><div id="asi"></div></div>
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+                <script>
+
+                $(".btn").click(function(){
+                      $.get('http://api.openweathermap.org/data/2.5/weather?q='+ $("input").val() + '&appid=95176c8edea30e33338e0eaddd53a916').success (function(data){
+                      $("#asi").append("<div><h2>El tiempo en <b>" + $("input").val() + '</b> es: '+ data.weather[0].description + " </h2></div>").append("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>")
+                      })
+                })
+
+              </script>
+           </body>
+   </html>
+
+<!-- Temperatura actual -->
+<!-- La máxima y la mínima de hoy
+Descripción de las condiciones actuales
+Velocidad del viento
+A que hora sale y se esconde el sol.(Pista: new Date(weatherData.sys.sunrise * 1000) ) -->

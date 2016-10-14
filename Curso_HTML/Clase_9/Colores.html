@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+
+  <html>
+     <head>
+            <meta charset="UTF-8">
+            <title> Colores </title>;
+
+
+                    <style>
+                    body {
+                      background-color: gray;
+                    }
+                   </style>
+
+
+     </head>
+
+            <body>
+                <div>
+                  <h1> header</h1>
+                </div>
+                <div id="parrafo">
+                  <p>* si es mayor y es miembro, dele la bienveida como sr o sra.
+                  **preguntele si tiene sed
+                  **preguntele que quiere tomar
+                  **si la respuesta es Coors Light, echalos del bar
+                  **si a respuesta es distinta de Coors Light digale que la bebida esta en camino.</p>
+                </div>
+
+
+                <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+                <script>
+
+                colfondo = prompt ("de que color le gustaria el fondo de la pagina?( las opciones son: red, yellow o blue )")
+
+
+                while (colfondo !== "red" && colfondo !== "blue" && colfondo !== "yellow"){
+                  colfondo = prompt ("de que color le gustaria el fondo de la pagina?")
+                }
+                  $("body").css("background-color", colfondo)
+
+                  if (colfondo ==="blue"){
+                    $("#parrafo").css("color","white")
+                  }else   if (colfondo==="yelow"){
+                      $("#parrafo").css("color","blue")
+                    } else if (colfondo === "red"){
+                        $("#parrafo").css("color","darkgray")
+                    }
+
+
+
+                </script>
+           </body>
+   </html>

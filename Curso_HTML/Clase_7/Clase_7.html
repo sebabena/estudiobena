@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clase 7</title>;
+
+  </head>
+          <body>
+          <div id = "result"></div>
+          <img>
+          <p id="message">on Eagle Flies at Midnight</p>
+
+                  <script>
+                          var response, image_path,
+                              secret_saying = document.querySelector('#message').textContent
+                                  if (secret_saying === "An Eagle Flies at Midnight") {
+                            response = "You may pass"
+                            image_path = "http://www.quickmeme.com/img/58/58044c8c68e42d259a65c665bdb38963c00b4b6153534658d5b84cd626b771a6.jpg"
+                          } else {
+                            response = "Release the hounds!"
+                            image_path = "https://i.ytimg.com/vi/VVpa9rQkoik/hqdefault.jpg"
+                          }
+                          document.querySelector('#result').textContent = response
+                          document.querySelector('img').src = image_path
+                  </script>
+          </body>
+</html>
